@@ -21,8 +21,8 @@
 	width: 60vh;
 	height: 80vh;
 	background-color: black;
-	border-style: solid;
-	border-color: gray;
+	/* border-style: solid; */
+	/* border-color: gray; */
 }
 
 .resultdisplay {
@@ -35,8 +35,9 @@
 	width: 100%;
 	height: 12vh;
 	background-color: gray;
-	border-bottom-style: groove;
-	border-color: gray;
+	margin-bottom: 2px;
+	/* border-bottom-style: groove; */
+	/* border-color: gray; */
 }
 
 .buttonArea {
@@ -48,30 +49,130 @@
 	/* border-style: solid; */
 	/* align-content: stretch; */
 	/* align-items: stretch; */
-	grid-template-columns: 1fr 1fr 1fr 1fr;
-	grid-template-rows: auto;
+	/* grid-template-columns: 1fr 1fr 1fr 1fr; */
+	/* grid-template-rows: auto; */
+	grid-template-areas:
+		'clear paren1 paren2 backspace'
+		'mult divide exp mod '
+		'seven eight nine add '
+		'four five six sub '
+		'one two three enter '
+		'neg zero decimal enter';
+	/* 'add add backspace sub'; */
 	height: 84%;
 	width: 100%;
 	/* grid-gap: 1px; */
 	/* display: grid; */
 	/* margin: 5p; */
 	flex-direction: row;
-	background: chartreuse;
+	background: gray;
 }
 
 .buttons {
-	display: flex;
+	/* display: flex; */
 	display: grid;
-	flex-direction: row;
+	/* flex-direction: row; */
 	/* flex-wrap: wrap; */
-	justify-content: space-between;
+	/* justify-content: space-between; */
 	justify-content: center;
 	align-items: center;
-	grid-template-columns: auto;
-	grid-template-rows: auto;
-	width: 1fr;
-	height: 1fr;
+	/* grid-template-columns: auto; */
+	/* grid-template-rows: auto; */
+	/* width: 1fr; */
+	/* height: 1fr; */
 	/* background-color: green; */
 	border-style: ridge;
 	border-color: gray;
+}
+
+.one {
+	grid-area: one;
+}
+
+.two {
+	grid-area: two;
+}
+
+.three {
+	grid-area: three;
+}
+
+.four {
+	grid-area: four;
+}
+
+.five {
+	grid-area: five;
+}
+
+.six {
+	grid-area: six;
+}
+
+.seven {
+	grid-area: seven;
+}
+
+.eight {
+	grid-area: eight;
+}
+
+.nine {
+	grid-area: nine;
+}
+
+.zero {
+	grid-area: zero;
+}
+
+.enter {
+	grid-area: enter;
+	background: #00003e;
+}
+
+.backspace {
+	grid-area: backspace;
+	/* background: #650000; */
+	background: #3e0000;
+}
+
+.clear {
+	grid-area: clear;
+	background: #3e0000;
+}
+
+.divide {
+	grid-area: divide;
+}
+
+.mult {
+	grid-area: mult;
+}
+
+.add {
+	grid-area: add;
+}
+
+.sub {
+	grid-area: sub;
+}
+
+.paren1 {
+	grid-area: paren1;
+}
+
+.paren2 {
+	grid-area: paren2;
+}
+
+.exp {
+	grid-area: exp;
+}
+
+.decimal {
+	grid-area: decimal;
+}
+
+.neg {
+	grid-area: neg;
 }
