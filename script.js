@@ -1,8 +1,6 @@
-const operate = function(a, operater, b){
+let arr = []
 
-    console.log(a)
-    console.log(b)
-    console.log(operater);
+const operate = function(a, operater, b){
 
     if(operater === "+"){
         console.log(add(a,b))
