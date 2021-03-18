@@ -1,19 +1,21 @@
-let arr = [123]
+let arr = [];
 const display = document.querySelector(".resultdisplay");
 display.textContent = arr;
 const buttons = document.querySelectorAll('.buttons');
 
 for(let i=0; i<buttons.length; i++){
     buttons[i].addEventListener('click', function(e){
-        console.log(e.target.className);
-        console.log(e);
-        console.log(this)
+        // console.log(e.target.className);
+        // console.log(e);
+        // console.log(this)
+        // console.log(e.target.outerText)
+        let buttonClicked = parseInt(e.target.outerText)
+        // console.log(buttonClicked);
+        arr.push(buttonClicked);
+        
+        let displayedNumbers = parseInt(arr.join(''))
 
-        if(e.target.className === "buttons nine"){
-            console.log("nine")
-            arr.push(9);
-            display.textContent = arr;
-        }
+        display.textContent = displayedNumbers;
 
     } );
 }

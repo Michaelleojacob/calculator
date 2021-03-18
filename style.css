@@ -55,6 +55,8 @@
 	/* align-items: stretch; */
 	/* grid-template-columns: 1fr 1fr 1fr 1fr; */
 	/* grid-template-rows: auto; */
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
 	grid-template-areas:
 		'clear paren1 paren2 backspace'
 		'mult divide exp mod '
