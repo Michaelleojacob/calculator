@@ -1,39 +1,19 @@
-# Calculator
+# Calculator by Michael Jacob
 
-# Repository:
+# Repository: <br /> https://github.com/Michaelleojacob/calculator
 
-## https://github.com/Michaelleojacob/calculator
-
-# live application:
-
-## https://michaelleojacob.github.io/calculator/
-
-# I like to keep all my projects sleek, and built in dark mode. Focus is for the website to be responive and work well on all platforms.
+# live application: <br /> https://michaelleojacob.github.io/calculator/
 
 # Built with vanilla javascript, html and css.
 
-# Highlight features:
+# High Priority on: <br /> Simple and sleek design <br /> Mobile first focus <br /> Dark mode
 
-## - Click to copy event on my email.
+# Highlight features: <br /> Click to copy event on my email. <br /> Event handlers for both click and keydown events on the same element. <br /> Custom tooltip popup
 
-## - Event handlers for both click and keydown events on the same element.
+# Future additions: <br /> A PEMDAS version. (multiple inputs) Whereas this version is single input. <br /> Possibly a BIDMAS version for the UK.
 
-## - Custom tooltip popup
+# Email me: <br /> michaelleojacob@gmail.com
 
-# Future additions:
+# Linkedin: <br /> https://www.linkedin.com/public-profile/in/michael-leo-jacob
 
-## A PEMDAS version. (multiple inputs) Whereas this version is single input.
-
-## Possibly a BIDMAS version for the UK.
-
-# Email me:
-
-## michaelleojacob@gmail.com
-
-# Linkedin:
-
-## https://www.linkedin.com/public-profile/in/michael-leo-jacob
-
-# Github:
-
-## https://github.com/Michaelleojacob
+# Github: <br /> https://github.com/Michaelleojacob
