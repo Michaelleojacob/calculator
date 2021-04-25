@@ -30,7 +30,6 @@ a:active {
 
 header {
 	display: flex;
-	color: white;
 	height: 1.5rem;
 	margin-left: auto;
 	margin-right: auto;
@@ -52,8 +51,8 @@ select:focus {
 	box-shadow: none;
 	outline: none;
 	height: 1.5rem;
-	color: white;
 	font-size: 1.5rem;
+	color: rgba(255, 255, 255, 0.829);
 }
 
 #email {
@@ -61,7 +60,6 @@ select:focus {
 	justify-content: center;
 	align-content: center;
 	height: 1.5rem;
-	color: white;
 	width: 50%;
 	max-width: max-content;
 	font-size: 1.5rem;
@@ -76,7 +74,7 @@ select:focus {
 .mytooltip::after {
 	--scale: 0;
 	--arrow-size: 20px;
-	--tooltip-color: #333;
+	--tooltip-color: rgb(119, 114, 114);
 	/* --translate-y: 100%, 0; */
 	position: absolute;
 	top: -0.25rem;
@@ -90,7 +88,6 @@ select:focus {
 .mytooltip::before {
 	--translate-y: calc(100% + var(--arrow-size));
 	content: attr(data-tooltip);
-	color: white;
 	border-radius: 0.3rem;
 	padding: 0.3rem;
 	text-align: center;
@@ -137,11 +134,11 @@ select:focus {
 	flex-direction: column;
 	flex: 1;
 	padding: 5px;
+	max-width: 60vh;
 	box-sizing: border-box;
 	align-content: center;
 	justify-content: center;
 	justify-content: space-evenly;
-	width: 100%;
 	height: 12vh;
 	background: linear-gradient(to right, #5869725b, #3d3c5a);
 	margin-bottom: 2px;
@@ -151,6 +148,7 @@ select:focus {
 	position: relative;
 	box-sizing: border-box;
 	display: flex;
+	max-width: 60vh;
 	align-content: flex-end;
 	justify-content: flex-end;
 	font-size: 2.5rem;
@@ -161,6 +159,7 @@ select:focus {
 	position: relative;
 	box-sizing: border-box;
 	display: flex;
+	max-width: 60vh;
 	justify-content: flex-end;
 	align-content: flex-end;
 	font-size: 1.5rem;
