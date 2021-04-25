@@ -8,4 +8,4 @@
 
 # Future additions:<br>A PEMDAS version. (multiple inputs) Whereas this version is single input.<br>Possibly a BIDMAS version for the UK.
 
-# Get in touch!:<br> @michaelleojacob@gmail.com<br><a href="https://www.linkedin.com/public-profile/in/michael-leo-jacob" target="_blank">Linkedin</a><br><a href="https://https://github.com/Michaelleojacob" target="_blank">Github</a>
+# Get in touch!:<br> michaelleojacob@gmail.com<br><a href="https://www.linkedin.com/public-profile/in/michael-leo-jacob" target="_blank">Linkedin</a><br><a href="https://https://github.com/Michaelleojacob" target="_blank">Github</a>
