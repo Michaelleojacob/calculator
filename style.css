@@ -1,13 +1,123 @@
-* {
-	background: #262626;
+body {
+	all: unset;
+	background: linear-gradient(to right, #333, black);
+	gap: 0px;
+	grid-gap: 0px;
+	font-size: 0px;
+	border: none;
+	color: rgba(255, 255, 255, 0.829);
+}
+
+a {
+	color: inherit;
+}
+
+a:link {
+	text-decoration: none;
+}
+
+a:visited {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+a:active {
+	text-decoration: none;
+}
+
+header {
+	display: flex;
 	color: white;
+	height: 1.5rem;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 60vh;
+	font-size: 1.5rem;
+	justify-content: space-evenly;
+	margin-top: 2%;
+}
+
+input,
+input:focus,
+textarea:focus,
+select:focus {
+	border: none;
+	background-image: none;
+	background-color: transparent;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	outline: none;
+	height: 1.5rem;
+	color: white;
+	font-size: 1.5rem;
+}
+
+#email {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	height: 1.5rem;
+	color: white;
+	width: 50%;
+	max-width: max-content;
+	font-size: 1.5rem;
+	justify-content: center;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 2%;
+}
+
+.mytooltip::before,
+.mytooltip::after {
+	--scale: 0;
+	--arrow-size: 20px;
+	--tooltip-color: #333;
+	/* --translate-y: 100%, 0; */
+	position: absolute;
+	top: -0.25rem;
+	left: 50%;
+	transform: translateX(-50%) translateY(var(--translate-y, 0))
+		scale(var(--scale));
+	transition: 150ms transform;
+	transform-origin: top center;
+}
+
+.mytooltip::before {
+	--translate-y: calc(100% + var(--arrow-size));
+	content: attr(data-tooltip);
+	color: white;
+	border-radius: 0.3rem;
+	padding: 0.3rem;
+	text-align: center;
+	width: max-content;
+	max-width: 100%;
+	background: var(--tooltip-color);
+}
+
+.mytooltip:hover::before,
+.mytooltip:hover::after {
+	--scale: 1;
+}
+
+.mytooltip::after {
+	--translate-y: calc(1 * var(--arrow-size));
+	content: '';
+	border: var(--arrow-size) solid transparent;
+	border-bottom-color: var(--tooltip-color);
+	transform-origin: bottom center;
 }
 
 .centeringoutside {
 	display: flex;
 	justify-content: center;
 	align-content: center;
-	margin-top: 5%;
+	margin-top: 2%;
+	box-sizing: border-box;
 }
 
 .outside {
@@ -16,79 +126,82 @@
 	justify-content: center;
 	align-items: center;
 	align-content: center;
-	/* width: 300px; */
-	/* height: 500px; */
 	width: 60vh;
 	height: 80vh;
-	background-color: #262626;
-	/* border-style: solid; */
-	/* border-color: gray; */
+	box-sizing: border-box;
 }
 
-.resultdisplay {
+.display {
 	display: block;
 	display: flex;
-	align-items: flex-end;
-	justify-content: flex-end;
-	font-size: 45px;
-	/* align-content: center */
-	/* justify-content: center; */
-	/* align-items: center; */
-	/* text-align: center; */
-	/* flex-direction: column; */
+	flex-direction: column;
+	flex: 1;
+	padding: 5px;
+	box-sizing: border-box;
+	align-content: center;
+	justify-content: center;
+	justify-content: space-evenly;
 	width: 100%;
 	height: 12vh;
-	background-color: gray;
+	background: linear-gradient(to right, #5869725b, #3d3c5a);
 	margin-bottom: 2px;
-	/* border-bottom-style: groove; */
-	/* border-color: gray; */
+}
+
+.currDisplay {
+	position: relative;
+	box-sizing: border-box;
+	display: flex;
+	align-content: flex-end;
+	justify-content: flex-end;
+	font-size: 2.5rem;
+	height: 2.5rem;
+}
+
+.prevDisplay {
+	position: relative;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: flex-end;
+	align-content: flex-end;
+	font-size: 1.5rem;
+	height: 1.5rem;
+	opacity: 0.8;
 }
 
 .buttonArea {
 	display: flex;
 	display: grid;
-	/* align-items: center; */
-	/* align-content: center; */
-	/* justify-content: center; */
-	/* border-style: solid; */
-	/* align-content: stretch; */
-	/* align-items: stretch; */
-	/* grid-template-columns: 1fr 1fr 1fr 1fr; */
-	/* grid-template-rows: auto; */
+	gap: 0px;
+	grid-gap: 0px;
+	border: none;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
 	grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
 	grid-template-areas:
-		'clear paren1 paren2 backspace'
+		'sqrt clear ce backspace'
 		'mult divide exp mod '
 		'seven eight nine add '
 		'four five six sub '
 		'one two three enter '
 		'neg zero decimal enter';
-	/* 'add add backspace sub'; */
-	height: 84%;
+	height: 84.7%;
 	width: 100%;
-	/* grid-gap: 1px; */
-	/* display: grid; */
-	/* margin: 5p; */
 	flex-direction: row;
-	background: gray;
 }
 
 .buttons {
-	/* display: flex; */
 	display: grid;
-	/* flex-direction: row; */
-	/* flex-wrap: wrap; */
-	/* justify-content: space-between; */
 	justify-content: center;
 	align-items: center;
-	/* grid-template-columns: auto; */
-	/* grid-template-rows: auto; */
-	/* width: 1fr; */
-	/* height: 1fr; */
-	/* background-color: green; */
-	border-style: ridge;
-	border-color: gray;
+	box-sizing: border-box;
+	border: thin solid rgba(80, 78, 78, 0.26);
+	padding: auto;
+	font-size: 1.25rem;
+	background: rgba(44, 43, 43, 0.26);
+	color: rgba(255, 255, 255, 0.829);
+}
+
+.buttons:hover {
+	opacity: 30%;
 }
 
 .one {
@@ -133,18 +246,17 @@
 
 .enter {
 	grid-area: enter;
-	background: #00003e;
+	background: #0d0d4793;
 }
 
 .backspace {
 	grid-area: backspace;
-	/* background: #650000; */
-	background: #3e0000;
+	background: #72131360;
 }
 
 .clear {
 	grid-area: clear;
-	background: #3e0000;
+	background: #72131360;
 }
 
 .divide {
@@ -163,12 +275,13 @@
 	grid-area: sub;
 }
 
-.paren1 {
-	grid-area: paren1;
+.sqrt {
+	grid-area: sqrt;
 }
 
-.paren2 {
-	grid-area: paren2;
+.ce {
+	grid-area: ce;
+	background: #72131360;
 }
 
 .exp {
