@@ -1,8 +1,4 @@
-# Calculator by Michael Jacob
-
-# Repository: <br /> https://github.com/Michaelleojacob/calculator
-
-# live application: <br /> https://michaelleojacob.github.io/calculator/
+# Calculator by Michael Jacob <br /> <a href="https://github.com/Michaelleojacob/calculator" target="_blank">Repository</a> <br /> <a href="https://michaelleojacob.github.io/calculator/" target="_blank">Live application</a>
 
 # Built with vanilla javascript, html and css.
 
@@ -14,6 +10,6 @@
 
 # Email me: <br /> michaelleojacob@gmail.com
 
-# Linkedin: <br /> https://www.linkedin.com/public-profile/in/michael-leo-jacob
+# <a href="https://www.linkedin.com/public-profile/in/michael-leo-jacob" target="_blank">Linkedin</a>
 
-# Github: <br /> https://github.com/Michaelleojacob
+# <a href="https://https://github.com/Michaelleojacob" target="_blank">Github</a>
